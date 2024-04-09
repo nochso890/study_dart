@@ -15,6 +15,7 @@ getDynamicType(){
   if(something is String){ //원하는 타입인지 if 문을 이용하여 확인 가능.
     something.toString(); //해당 타입일 경우 사용 할 수 있는 함수 제공.
   }
+
   something = 12;
   something = '';
   something = true;
