@@ -1,2 +1,1 @@
-A sample command-line application with an entrypoint in `bin/`, library code
-in `lib/`, and example unit test in `test/`.
+Flutter 공부를 위한 Dart 언어의 꼭 알아야하는 기본수준공부.
