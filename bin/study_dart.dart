@@ -1,4 +1,8 @@
+import 'package:study_dart/AbstractStudy.dart';
+import 'package:study_dart/Inheritance.dart';
+import 'package:study_dart/Mixins.dart';
 import 'package:study_dart/Player.dart';
+import 'package:study_dart/ServerEnums.dart';
 import 'package:study_dart/study_dart.dart' as study_dart;
 import 'package:study_dart/Variables.dart' as var_keyword;
 import 'package:study_dart/DataTypes.dart' as basic_type;
@@ -48,10 +52,33 @@ void main(List<String> arguments) {
   // player.sayHello();
   // player.myLevel();
 
-  Player newPlayer = Player.newUser(name: "newUser", server: "test");
-  newPlayer.getUserInformation();
-  print('');
-  Player savePlayer = Player.saveUser(name: "saveUser", server: "mega");
-  savePlayer.getUserInformation();
+  // Player newPlayer = Player.newUser(name: "newUser", server: "test");
+  // newPlayer.getUserInformation();
+  // print('');
+  // Player savePlayer = Player.saveUser(name: "saveUser", server: "mega");
+  // savePlayer.getUserInformation();
 
+  // var testUser = Player(name: "bruce", server: "mega", level: 99, xp: 93829103);
+  // testUser.level = 55;
+  // testUser.server = 'test';
+
+  var testUser = Player(name: "bruce", server: Server.mega, level: 99, xp: 93829103)
+    ..level = 1
+    ..server = Server.test
+    ..xp = 0
+    ..getUserInformation();
+
+  var character = Character();
+  print('');
+  character.walk();
+  character.attack();
+
+  var gameUser = GameUser(level: 999, server: Server.mega, name: 'brcue');
+  print('Inheritance Study');
+  gameUser.sayHello();
+
+  var playUser = PlayUser(level: 899, server: Server.test);
+  print('');
+  playUser.run();
+  print(playUser.hitDamage);
 }

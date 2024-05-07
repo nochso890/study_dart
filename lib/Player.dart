@@ -1,3 +1,5 @@
+import 'ServerEnums.dart';
+
 //Class 관련 과제로 주석은 이전 순서 코드로 주석을 main Class 의 Classes 와 맞춰 풀면서 실행 해보기.
 // class Player{
 //   String name = "testUser";
@@ -47,21 +49,52 @@
 //   }
 // }
 
+// class Player{
+//   String name,server; //같은 변수타입의 경우 한줄로 사용할 수 있다.
+//   int level,xp;
+//
+//   Player({required this.name,required this.server,required this.level,required this.xp});
+//
+//   Player.newUser({required this.name,required this.server}) : // 생성자에 별도의 이름을 지정하여 상황에 따라 초기화방법을 선택할 수 있다.
+//       level = 0,
+//       xp = 0;
+//
+//   Player.saveUser({required this.name,required this.server}) :
+//       level = 99,
+//       xp = 90000;
+//
+//   void getUserInformation(){
+//     print('Hello new User! you are information is');
+//     print('You are name is $name');
+//     print('Connection server name is $server');
+//     print('Level : $level');
+//     print('Xp : $xp');
+//   }
+// }
+
+// class Player{
+//   String name,server;
+//   int level, xp;
+//
+//   Player({required this.name, required this.server, required this.level, required this.xp});
+//
+//   void getUserInformation() {
+//     print('Hello new User! you are information is');
+//     print('You are name is $name');
+//     print('Connection server name is $server');
+//     print('Level : $level');
+//     print('Xp : $xp');
+//   }
+// }
+
 class Player{
-  String name,server; //같은 변수타입의 경우 한줄로 사용할 수 있다.
-  int level,xp;
+  String name;
+  int level, xp;
+  Server server;
 
-  Player({required this.name,required this.server,required this.level,required this.xp});
+  Player({required this.name, required this.server, required this.level, required this.xp});
 
-  Player.newUser({required this.name,required this.server}) : // 생성자에 별도의 이름을 지정하여 상황에 따라 초기화방법을 선택할 수 있다.
-      level = 0,
-      xp = 0;
-
-  Player.saveUser({required this.name,required this.server}) :
-      level = 99,
-      xp = 90000;
-
-  void getUserInformation(){
+  void getUserInformation() {
     print('Hello new User! you are information is');
     print('You are name is $name');
     print('Connection server name is $server');

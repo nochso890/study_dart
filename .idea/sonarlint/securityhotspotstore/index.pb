@@ -60,3 +60,13 @@ B
 lib/DataTypes.dart,c/8/c8c149eae97e40bd2298959e04346c67022ee7c8
 B
 lib/Variables.dart,9/4/948a7efcb49d1a848f9cfc67d320b37e09a275b1
+F
+lib/AbstractStudy.dart,2/4/2408d944269800ecd1f84337b76b19f3f129b0ba
+D
+lib/Inharetance.dart,0/9/09a9abc1c56d44382755bf75b5f607eefe814e8b
+D
+lib/Inheritance.dart,3/e/3e6822b26195486d270221ec2dd3bf6b2a189715
+D
+lib/ServerEnums.dart,9/0/909fb01f8d039e5c8bbf1e6f1a277b59a12b4eca
+?
+lib/Mixins.dart,c/3/c3678d1b91e7b6a190dac21cd3bb52d9b40991a3
